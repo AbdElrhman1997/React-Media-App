@@ -1,0 +1,42 @@
+.newPost {
+
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    text-align: left;
+}
+label {
+    text-align: left !important;
+}
+.inputText {
+    height: 20vh;
+    width: 100%;
+    padding: 1rem 3rem 1rem 1rem;
+    resize: none;
+    font-size: .8rem;
+    color: rgb(99, 98, 98);
+}
+.inputText:focus {
+    border: none;
+}
+.inputField {
+    position: relative;
+}
+.iconInput {
+    color: black;
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    font-size: 30px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    padding: 0.2rem;
+    transition: .2s ease-in-out;
+}
+.iconInput:hover {
+    background-color: rgba(128, 128, 128, 0.25);
+    cursor: pointer;
+}
