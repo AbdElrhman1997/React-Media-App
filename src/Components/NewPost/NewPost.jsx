@@ -5,14 +5,16 @@ import './NewPost.css'
 const NewPost = ({PostsData,setPostsData}) => {
     
     const addNewPost =(e)=>{
-        const NewPost=
-        {
-            id:Math.floor(Math.random()*10),
-            title:'New Post',
-            body:e.target.previousElementSibling.value
+        if(e.target.previousElementSibling.value) {
+            const NewPost=
+            {
+                id:Math.floor(Math.random()*1000),
+                title:'New Post',
+                body:e.target.previousElementSibling.value
+            }
+            setPostsData([NewPost,...PostsData]);
+            e.target.previousElementSibling.value='';
         }
-        setPostsData([NewPost,...PostsData]);
-        e.target.previousElementSibling.value='';
     }
 
     return (

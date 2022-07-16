@@ -37,6 +37,6 @@ label {
     transition: .2s ease-in-out;
 }
 .iconInput:hover {
-    background-color: rgba(128, 128, 128, 0.25);
+    background-color: rgba(128, 128, 128, 0.2);
     cursor: pointer;
 }

@@ -1,7 +1,8 @@
 .App {
   background-color: rgba(159, 197, 230, 0.7);
-  height: fit-content;
+  min-height: 100vh;
 }
-.container {
-  width: 60%;
+* {
+  margin: 0;
+  padding: 0;
 }

@@ -2,7 +2,6 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Header from '../Header/Header';
 import Posts from '../Posts/Posts';
-import Comments from '../Comments/Comments';
 
 import './App.css';
 
