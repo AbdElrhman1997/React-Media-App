@@ -1,8 +1,6 @@
-.posts {
+#postCard {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
 }
 .post {
     background-color: #fff;
@@ -10,8 +8,7 @@
     font-size: 18px;
     padding: 1rem;
     text-align: left;
-    margin: 1rem;
-    width: 100%;
+    margin: 2rem 0;
     position: relative;
 }
 .title {
@@ -29,10 +26,10 @@ margin: 0;
     font-size: .8rem;
     padding: .4rem 1rem;
     margin: 1rem 1rem;
+    height: fit-content;
 }
-.btn {
+.iconP {
     border-radius: 50%;
-    transition: .2s ease-in-out;
     font-size: 16px;
     position: absolute;
     top: .5rem;
@@ -40,14 +37,17 @@ margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 2rem;
+    height: 2rem;
     padding: .5rem;
 }
-.btn:hover {
+.iconP:hover {
     background-color: rgba(128, 128, 128, 0.2);
+    cursor: pointer;
 }
-.imgPosts {
-    width: 6%;
-    height: fit-content;
+.imgPost {
+    width: 4rem;
+    height: 2.8rem;
     border-radius: 50%;
 }
 .postIcons {
@@ -55,23 +55,36 @@ margin: 0;
     justify-content: space-between;
     font-size: 1.3rem;
     color: gray;
+}
+.postIcon {
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    padding: .6rem;
+    border-radius: 50%;
 }
 .postIcon:hover {
     background-color: rgba(128, 128, 128, 0.2);
+    cursor: pointer;
 }
 .love {
     color: red;
 }
-.container {
-    width: 60%;
+.open {
+    color: rgb(43, 113, 226);
 }
+
 @media (max-width:767px) {
     .container {
         width: 80%;
     }
     .imgPosts {
-        width: 10%;
+        width: 2.3rem !important;
+        height: 2.5rem !important;
     }
 }
 
@@ -79,9 +92,7 @@ margin: 0;
     .container {
         width: 90%;
     }
-    .imgPosts {
-        width: 15%;
-        height: fit-content;
-        border-radius: 50%;
+    *{
+        font-size: 14px;
     }
 }
