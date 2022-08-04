@@ -29,7 +29,7 @@ const Comments = ({commentsDisplay}) => {
     }
 
     return (
-        <div className={`comments ${commentsDisplay?'d-block':'d-none'}`}>
+        <div className={`comments ${commentsDisplay?'dropdown':'dropup'}`}>
             <div className='position-relative'>
                 <label className='text-black-50 lableComment'>add new Comment</label>
                 <textarea type='text' className='inputComment' onChange={handleChange}/><hr/>

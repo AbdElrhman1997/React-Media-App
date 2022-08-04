@@ -1,6 +1,6 @@
 #postCard {
     width: 100%;
-
+    z-index: 2;
 }
 .post {
     background-color: #fff;
@@ -10,6 +10,8 @@
     text-align: left;
     margin: 2rem 0;
     position: relative;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow:rgb(0 0 0 / 20%) -3px 2px 10px 1px;
 }
 .title {
 font-size: 14px;
@@ -27,6 +29,7 @@ margin: 0;
     padding: .4rem 1rem;
     margin: 1rem 1rem;
     height: fit-content;
+    line-height: 2.5;
 }
 .iconP {
     border-radius: 50%;
@@ -73,6 +76,7 @@ margin: 0;
 }
 .love {
     color: red;
+    transition: all 0.2s ease-in-out;
 }
 .open {
     color: rgb(43, 113, 226);

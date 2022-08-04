@@ -1,6 +1,51 @@
 .comments {
     transition: .5s ease-in-out ;
     display: none;
-    width: 90%;
+    width: 100%;
     margin: auto;
+    z-index: 1;
+    overflow: hidden;
+    transition:all 1s linear;
+}
+.inputComment {
+    resize: none;
+    padding: 1rem 0.5rem;
+    width: 100%;
+    font-size: 0.8rem;
+    height: 40px;
+    margin: 0 0 1rem;
+    overflow-y: auto;
+}
+.iconInputComment {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    font-size: 1.5rem;
+    transform: translateY(-50%);
+    transition: all 0.2s ease-in-out;
+    border-radius: 50%;
+    padding: .2rem;
+}
+.dropdown {
+    display: block;
+    animation: dropdown ease-in-out .5s;
+}
+.dropup {
+    animation: dropup ease-in-out .5s;
+}
+@keyframes dropdown {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 40rem;
+    }
+}
+@keyframes dropup {
+    0% {
+        height: 40rem;
+    }
+    100% {
+        height: 0rem;
+    }
 }

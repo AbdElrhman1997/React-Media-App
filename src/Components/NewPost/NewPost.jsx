@@ -26,7 +26,7 @@ const NewPost = (props) => {
     return (
         <div className='newPost'>
             <div className='input'>
-                <label className='text-black-50'>add new post</label>
+                <label className='text-black-50 fs-5 mx-2'>add new post</label>
                 <div className='inputField'>
                     <textarea type='text' className='inputText' onChange={handleChange}/>
                     <AiOutlineArrowRight className='iconInput' onClick={addNewPost}/>

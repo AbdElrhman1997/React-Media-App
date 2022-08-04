@@ -1,6 +1,5 @@
 .header {
-    position: relative;
-    height: 50vh;
+    height: fit-content;
 }
 .backImage {
     width: 100%; 
@@ -10,10 +9,16 @@
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
-    position: absolute;
-    top: 15vh;
+    position: relative;
+    top: -80px;
     left: 50%;
     transform: translate(-50%);
-    border: 0.4rem solid white;
+    outline: 0.4rem solid white;
 }
-.headProfile {}
+.headProfile {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    top: -45px;
+}

@@ -1,5 +1,5 @@
-.newPost {
-
+.inputText:focus {
+    outline: rgba(0, 60, 113, 0.7) 2px solid;
 }
 .input {
     display: flex;
@@ -18,6 +18,9 @@ label {
     resize: none;
     font-size: .8rem;
     color: rgb(99, 98, 98);
+    border-radius: 4px;
+    margin: .7rem 0;
+    font-size: 1.4rem;
 }
 .inputText:focus {
     border: none;

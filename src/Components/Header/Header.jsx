@@ -6,11 +6,11 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div className='header'>
+        <header className='header'>
             <img src={backImage} className='backImage'/>
             <img src={profileImage} className='profileImage'/>
-            {/* <h1 className='headProfile'>AbdElrhman Mohamed</h1> */}
-        </div>
+            <p className='headProfile'>AbdElrhman Mohamed</p>
+        </header>
     )
 }
 
