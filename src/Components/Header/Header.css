@@ -13,7 +13,7 @@
     top: -80px;
     left: 50%;
     transform: translate(-50%);
-    border: 0.4rem solid white;
+    border: 7px solid white;
 }
 .headProfile {
     text-align: center;

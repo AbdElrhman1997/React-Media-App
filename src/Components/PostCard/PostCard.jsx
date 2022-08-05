@@ -9,8 +9,10 @@ import './PostCard.css';
 const PostCard = ({NumOfPost,postsData,setPostsData}) => {
     const [commentsDisplay,setCommentsDisplay]=useState(false);
     const [EditPost,setEditPost]=useState(false);
+    const [love,setLove]=useState(false);
 
     const removePostHandel = (PostId)=>{
+        setLove(false);
         const removedPost = postsData.filter(el =>{
             return (el.id !==  PostId) 
         })
@@ -27,8 +29,13 @@ const PostCard = ({NumOfPost,postsData,setPostsData}) => {
         }
     }
 
-    const handleLove = (e)=>{
-        e.target.classList.toggle('love');
+    const handleLove = ()=>{
+        if(love){
+            setLove(false);
+        }
+        else {
+            setLove(true);
+        }
     }
 
     const handleComments=()=>{
@@ -57,7 +64,7 @@ const PostCard = ({NumOfPost,postsData,setPostsData}) => {
                 }
                 <div className='postIcons'>
                     <div className='d-flex'>
-                        <div className='postIcon'><BsHeartFill onClick={handleLove}/></div>
+                        <div className='postIcon'><BsHeartFill className={love?'love':''} onClick={handleLove}/></div>
                         <div className='postIcon'><BsFillChatLeftTextFill className={commentsDisplay?'open':''} onClick={handleComments}/></div>
                     </div>
                     <div>
